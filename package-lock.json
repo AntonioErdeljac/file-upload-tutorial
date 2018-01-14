@@ -1,0 +1,45 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "commander": {
+      "version": "2.11.0",
+      "resolved": "https://registry.npmjs.org/commander/-/commander-2.11.0.tgz",
+      "integrity": "sha512-b0553uYA5YAEGgyYIGYROzKQ7X5RAqedkfjiZxwi0kL1g3bOaBNNZfYkzt/CL0umgD5wc9Jec2FbB98CjkMRvQ=="
+    },
+    "ejs": {
+      "version": "2.5.7",
+      "resolved": "https://registry.npmjs.org/ejs/-/ejs-2.5.7.tgz",
+      "integrity": "sha1-zIcsFoiArjxxiXYv1f/ACJbJUYo="
+    },
+    "express-generator": {
+      "version": "4.15.5",
+      "resolved": "https://registry.npmjs.org/express-generator/-/express-generator-4.15.5.tgz",
+      "integrity": "sha512-tvlHj1kw4bmoBFzJFFg0ng+6GHIBd09vA85oUoVtMiijUQtixzgU8Luio2XL/uEQ6nwJtKqdh2+fg1JFn3Wkvg==",
+      "requires": {
+        "commander": "2.11.0",
+        "ejs": "2.5.7",
+        "mkdirp": "0.5.1",
+        "sorted-object": "2.0.1"
+      }
+    },
+    "minimist": {
+      "version": "0.0.8",
+      "resolved": "https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz",
+      "integrity": "sha1-hX/Kv8M5fSYluCKCYuhqp6ARsF0="
+    },
+    "mkdirp": {
+      "version": "0.5.1",
+      "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz",
+      "integrity": "sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=",
+      "requires": {
+        "minimist": "0.0.8"
+      }
+    },
+    "sorted-object": {
+      "version": "2.0.1",
+      "resolved": "https://registry.npmjs.org/sorted-object/-/sorted-object-2.0.1.tgz",
+      "integrity": "sha1-fWMfS9OnmKJK8d/8+/6DM3pd9fw="
+    }
+  }
+}
