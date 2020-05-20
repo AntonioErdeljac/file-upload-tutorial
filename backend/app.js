@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const fileUpload = require('express-fileupload');
 const cors = require('cors');
+var fs = require('fs'); 
 
 const app = express();
 
@@ -27,13 +28,17 @@ app.use('/public', express.static(__dirname + '/public'));
 app.post('/upload', (req, res, next) => {
   console.log(req);
   let imageFile = req.files.file;
+  let dataV = "";
 
-  imageFile.mv(`${__dirname}/public/${req.body.filename}.jpg`, function(err) {
+  imageFile.mv(`${__dirname}/public/${req.body.filename}.txt`, function(err) {
     if (err) {
       return res.status(500).send(err);
     }
+    fs.readFile(`${__dirname}/public/${req.body.filename}.txt`, 'utf8', function(err, data){ 
+      dataV = data;
+  }); 
 
-    res.json({file: `public/${req.body.filename}.jpg`});
+    res.end(dataV);
   });
 
 })
